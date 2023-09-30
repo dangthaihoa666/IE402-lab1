@@ -1,0 +1,2 @@
+# Ignore Node.js http-server package and its dependencies
+node_modules/
