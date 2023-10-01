@@ -12987,3 +12987,4 @@ export var BinhThuanLine = createPolygon(
   1632808,
   [243, 214, 154]
 );
+
