@@ -15,10 +15,10 @@
     }
     </style>
 
-    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
-    <script src="https://js.arcgis.com/4.26/"></script>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.26/"></script>
 
-    <script type="module">
+  <script type="module">
         import { point_template_tree, point_template_light, point_template_chair, point_template_area, point_template_university } from './template/pointTemplate.js';
         import { tempPoints } from './template/tempPoints.js'
         import { tempLines } from './template/tempLines.js'
@@ -40,6 +40,9 @@
         import {QL14DLLine} from '/provinces/DakLak/QL14.js'
         import {QL26DLLine} from '/provinces/DakLak/QL26.js'
         import {QL27DLLine} from '/provinces/DakLak/QL27.js'
+
+        import {QL1KLDLine} from '/provinces/BinhDuong/QL1K.js'
+        import {QL1ALDLine} from '/provinces/BinhDuong/QL1A.js'
 
         import {QL14DNLine} from '/provinces/DakNong/QL14.js'
         import {QL14aDNLine} from '/provinces/DakNong/QL14a.js'
@@ -123,8 +126,11 @@
         import { QL24BQNgai } from './provinces/QuangNgai/QL24B.js'
         import { QL24CQNgai } from './provinces/QuangNgai/QL24C.js'
         import { QL24QNgai } from './provinces/QuangNgai/QL24.js'
-        
+
         import { VTLines } from './provinces/VungTau/VTLines.js'
+        import { QL51LDLine} from './provinces/VungTau/QL51.js'
+        import { QL55LDLine} from './provinces/VungTau/QL55.js'
+        import { QL56LDLine} from './provinces/VungTau/QL56.js'
 
         import { DongNaiLines } from './provinces/DongNai/DongNaiLines.js'
 
@@ -147,10 +153,11 @@
                 QuangNamLine, AH1QNam, HoChiMinhRouteQNam, QL14BQNam, QL14DQNam, QL14EQNam, QL14GQNam, QL40BQNam,
                 QuangNgaiLine, AH1QNgai, AH17,QL24KT,QL19, QL1APY,QL25,QL24BQNgai, QL24CQNgai, QL24QNgai,
                 QL14DLLine, QL26DLLine, QL27DLLine, QL14DNLine, QL14aDNLine, QL14bDNLine, QL28DNLine, QL28aDNLine,
-                QL28aLDLine, QL28LDLine, QL27LDLine, QL27aLDLine, QL20LDLine, 
-                VTLines,
+                QL28aLDLine, QL28LDLine, QL27LDLine, QL27aLDLine, QL20LDLine,
+                VTLines, QL51LDLine,  QL55LDLine, QL56LDLine,
+                QL1KLDLine, QL1ALDLine,
                 DongNaiLines,
-                
+
             ]) // add new lines here
 
 
@@ -198,13 +205,13 @@
                 graphicsLayer.add(createGraphic(data));
             });
             map.add(graphicsLayer);
-     
+
     });
   </script>
 </head>
 
 <body>
-  <div id="viewDiv"></div>
+<div id="viewDiv"></div>
 </body>
 
 </html>
