@@ -58,7 +58,7 @@ export var C3_LHP_VT = createPoint(
 )
 
 //Trường c3 ĐN
-export var C3_CVA_DN = createPoint(
+export var C3_CVA_DNong = createPoint(
     107.6838326,
     12.0049015,
     "Trường THPT Chu Văn An",
