@@ -1,18 +1,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <title>ArcGIS Lab 1</title>
-  <style>
-    html,
-    body,
-    #viewDiv {
-      padding: 0;
-      margin: 0;
-      height: 100%;
-      width: 100%;
-    }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>ArcGIS Lab 1</title>
+    <style>
+        html,
+        body,
+        #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
     </style>
 
   <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
@@ -37,9 +37,9 @@
         import { AHOneQTHIGHWay } from './provinces/quangtri/AH1QT.js'
         import { SixteenHighWay } from './provinces/quangtri/AH16.js'
 
-        import {QL14DLLine} from '/provinces/DakLak/QL14.js'
-        import {QL26DLLine} from '/provinces/DakLak/QL26.js'
-        import {QL27DLLine} from '/provinces/DakLak/QL27.js'
+        import { QL14DLLine } from '/provinces/DakLak/QL14.js'
+        import { QL26DLLine } from '/provinces/DakLak/QL26.js'
+        import { QL27DLLine } from '/provinces/DakLak/QL27.js'
 
         import {QL1KLDLine} from '/provinces/BinhDuong/QL1K.js'
         import {QL1ALDLine} from '/provinces/BinhDuong/QL1A.js'
@@ -50,11 +50,11 @@
         import {QL28DNLine} from '/provinces/DakNong/QL28.js'
         import {QL28aDNLine} from '/provinces/DakNong/QL28a.js'
 
-        import {QL28aLDLine} from '/provinces/LamDong/QL28a.js'
-        import {QL28LDLine} from '/provinces/LamDong/QL28.js'
-        import {QL27LDLine} from '/provinces/LamDong/QL27.js'
-        import {QL27aLDLine} from '/provinces/LamDong/QL27a.js'
-        import {QL20LDLine} from '/provinces/LamDong/QL20.js'
+        import { QL28aLDLine } from '/provinces/LamDong/QL28a.js'
+        import { QL28LDLine } from '/provinces/LamDong/QL28.js'
+        import { QL27LDLine } from '/provinces/LamDong/QL27.js'
+        import { QL27aLDLine } from '/provinces/LamDong/QL27a.js'
+        import { QL20LDLine } from '/provinces/LamDong/QL20.js'
 
         import { QBLines } from './provinces/quangbinh/QBLines.js'
         import { AH1QB } from './provinces/quangbinh/AH1QB.js'
@@ -94,11 +94,11 @@
         import { GLLines } from './provinces/GiaLai/GLLines.js'
         import { PYLines } from './provinces/PhuYen/PYLines.js'
 
-        import  { AH17 } from './provinces/GiaLai/AH17.js'
-        import  { QL24KT } from './provinces/KonTum/QL24KT.js'
-        import {QL19} from './provinces/GiaLai/QL19.js'
+        import { AH17 } from './provinces/GiaLai/AH17.js'
+        import { QL24KT } from './provinces/KonTum/QL24KT.js'
+        import { QL19 } from './provinces/GiaLai/QL19.js'
         import { QL1APY } from './provinces/PhuYen/QL1APY.js'
-        import {QL25} from './provinces/GiaLai/QL25.js'
+        import { QL25 } from './provinces/GiaLai/QL25.js'
 
         import { BinhDinhLine } from './provinces/BinhDinh/BDLine.js'
         import { AH1BDinh } from './provinces/BinhDinh/AH1.js'
@@ -137,6 +137,7 @@
 
         import {BPLines} from './provinces/BinhPhuoc/BPLines.js'
 
+        import { BDLines } from './provinces/BinhDuong/Lines.js'
         const arrUniversity = Object.values(universities)
         const arrCity = Object.values(cities)
         var points = [].concat(
@@ -149,19 +150,20 @@
                 TTHLines, HUEHCMHIGHWay, OneAHIGHWay, AHOneLeftHIGHWay, FourtyNineHIGHWay, QTLines,
                 QTHCMHighWay, QTHCM1HighWay, AHOneQTHIGHWay, SixteenHighWay, QBLines, AH1QB, QBHCMHighWay, AH131QB,
                 BinhThuanLine, NinhThuanLine, KhanhHoaLine,
-                OneABTLine, QL27NTLine,QL27BNTLine,QL27BKHLine, QL28BTLine,QL28BBTLine, QL55BBTLine, QL55BTLine, QL1ANTLine, QL1AKHLine, QL26KHLine,
+                OneABTLine, QL27NTLine, QL27BNTLine, QL27BKHLine, QL28BTLine, QL28BBTLine, QL55BBTLine, QL55BTLine, QL1ANTLine, QL1AKHLine, QL26KHLine,
                 THLines, NALines, HTLines, DLLines, DNLines, LDLines, AH1, HCM, QL7, QL217, KTLines, GLLines, PYLines,
                 BinhDinhLine, AH1BDinh, QL19BDinh, QL19BBDinh, QL1DBDinh,
                 DaNangLine, AH1DNang, QL14BDNang, QL14GDNang,
                 QuangNamLine, AH1QNam, HoChiMinhRouteQNam, QL14BQNam, QL14DQNam, QL14EQNam, QL14GQNam, QL40BQNam,
-                QuangNgaiLine, AH1QNgai, AH17,QL24KT,QL19, QL1APY,QL25,QL24BQNgai, QL24CQNgai, QL24QNgai,
+                QuangNgaiLine, AH1QNgai, AH17, QL24KT, QL19, QL1APY, QL25, QL24BQNgai, QL24CQNgai, QL24QNgai,
                 QL14DLLine, QL26DLLine, QL27DLLine, QL14DNLine, QL14aDNLine, QL14bDNLine, QL28DNLine, QL28aDNLine,
                 QL28aLDLine, QL28LDLine, QL27LDLine, QL27aLDLine, QL20LDLine,
                 VTLines, QL51LDLine,  QL55LDLine, QL56LDLine,
                 QL1KLDLine, QL1ALDLine,
                 DongNaiLines,
-                TNLines, BPLines
+                TNLines, BPLines,
                 
+                 BDLines,
 
             ]) // add new lines here
 
