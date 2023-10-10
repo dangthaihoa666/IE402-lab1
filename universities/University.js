@@ -634,6 +634,86 @@ export var C3_LHP_VT = createPoint(
     symbolC3
 )
 
+export var C3_NBK_VT = createPoint(
+    107.1881765,
+    10.5085336,
+    "Trường THPT Nguyễn Bỉnh Khiêm",
+    "tỉnh Bà Rịa Vũng Tàu",
+    symbolC3
+)
+export var C3_BR_VT = createPoint(
+    107.1786398,
+    10.5022866,
+    "Trường THPT Bà Rịa",
+    "tỉnh Bà Rịa Vũng Tàu",
+    symbolC3
+)
+export var C3_CT_VT = createPoint(
+    107.167057,
+    10.4993867,
+    "Trường THPT Châu Thành",
+    "tỉnh Bà Rịa Vũng Tàu",
+    symbolC3
+)
+export var C3_PM_VT = createPoint(
+    107.059085,
+    10.596107,
+    "Trường THPT Phú Mỹ",
+    "tỉnh Bà Rịa Vũng Tàu",
+    symbolC3
+)
+export var C3_HD_VT = createPoint(
+    107.120564,
+    10.6400334,
+    "Trường THPT Hắc Dịch",
+    "tỉnh Bà Rịa Vũng Tàu",
+    symbolC3
+)
+export var C3_LHPT_VT = createPoint(
+    107.220094,
+    10.4111542,
+    "Trường THPT Long Hải - Phước Tỉnh",
+    "tỉnh Bà Rịa Vũng Tàu",
+    symbolC3
+)
+export var C3_VTS_VT = createPoint(
+     107.2708038,
+     10.472762,
+     "Trường THPT Võ Thị Sáu",
+     "tỉnh Bà Rịa Vũng Tàu",
+     symbolC3
+ )
+export var C3_ND_VT = createPoint(
+     107.237169,
+     10.6448363,
+     "Trường THPT Nguyễn Du",
+     "tỉnh Bà Rịa Vũng Tàu",
+     symbolC3
+ )
+export var C3_NT_VT = createPoint(
+     107.2419431,
+     10.6507014,
+     "Trường THPT Nguyễn Trãi",
+     "tỉnh Bà Rịa Vũng Tàu",
+     symbolC3
+ )
+ export var C3_PB_VT = createPoint(
+      107.4121131,
+      10.5367807,
+      "Trường THPT Phước Bửu",
+      "tỉnh Bà Rịa Vũng Tàu",
+      symbolC3
+  )
+ export var C3_BUNGR_VT = createPoint(
+         107.4978131,
+         10.5527253,
+         "Trường THPT Bưng Riềng",
+         "tỉnh Bà Rịa Vũng Tàu",
+         symbolC3
+     )
+
+
+
 //Trường c3 ĐN
 export var C3_CVA_DN = createPoint(
     107.6838326,
