@@ -33,8 +33,6 @@ export var BuonMaThuoCity = createPoint(
     symbol
 )
 
-
-
 // --- Lâm Đồng
 export var BaoLocCity = createPoint(
     107.8222,
