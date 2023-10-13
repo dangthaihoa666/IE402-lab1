@@ -7,45 +7,6 @@ var symbol = {
     height: "24px",
 }
 
-export var tpCR = createPoint(
-    109.13813995,
-    11.912278732,
-    "Thành Phố Cam Ranh",
-    "tỉnh Khánh Hòa",
-    symbol
-)
-
-export var tpNhaTrang = createPoint(
-    109.188721759,
-    12.247102753,
-    "Thành Phố Nha Trang",
-    "tỉnh Khánh Hòa",
-    symbol
-)
-
-export var tpDHQT = createPoint(
-    107.101211349,
-    16.823945507,
-    "Thành Phố Đông Hà",
-    "tỉnh Quảng Trị",
-    symbol
-)
-
-export var tpDHQB = createPoint(
-    106.622532673,
-    106.622532673,
-    "Thành Phố Đồng Hới",
-    "tỉnh Quảng Bình",
-    symbol
-)
-
-export var tpHue = createPoint(
-    107.585347012,
-    16.462041735,
-    "Thành Phố Huế",
-    "tỉnh Thừa Thiên - Huế",
-    symbol
-)
 
 export var tpPRTC = createPoint(
     108.98998325,
@@ -72,125 +33,300 @@ export var BuonMaThuoCity = createPoint(
     symbol
 )
 
-// ----- Gia Lai
-export var PleikuCity = createPoint(
-    108.002692,
-    13.983854,
-    "Thành Phố Pleiku",
-    "tỉnh Gia Lai",
-    symbol
-)
-
-// ----- Phu Yen
-export var TuyHoaCity = createPoint(
-    109.300018,
-    13.082746,
-    "Thành Phố Tuy Hòa",
-    "tỉnh Phú Yên",
-    symbol
-)
-
-
-// ----- Bình Định
-export var QuyNhonCity = createPoint(
-    109.223611,
-    13.777389,
-    "Thành Phố Quy Nhơn",
-    "tỉnh Bình Định",
-    symbol
-)
-
-// --- Kon Tum
-export var KonTumCity = createPoint(
-    107.992871,
-    14.354184,
-    "Thành Phố Kon Tum",
-    "tỉnh Kon Tum",
-    symbol
-)
-
 // --- Lâm Đồng
-export var BaoLocCity = createPoint(
-    107.8222,
-    11.5475,
-    "Thành Phố Bảo Lộc",
-    "tỉnh Lâm Đồng",
+export var VungTauCity = createPoint(
+    107.114464,
+    10.384080,
+    "Thành Phố Vũng Tàu",
+    "tỉnh Bà Rịa Vũng Tàu",
     symbol
 )
 
-export var DaLatCity = createPoint(
-    108.4587,
-    11.9404,
+export var BaRiaCity = createPoint(
+    107.1384374,
+    10.5085664,
     "Thành Phố Đà Lạt",
-    "tỉnh Lâm Đồng",
+    "tỉnh Bà Rịa Vũng Tàu",
+    symbol
+)
+export var ChauDucProvince = createPoint(
+    107.1711494,
+    10.6558917,
+    "Huyện Châu Đức",
+    "tỉnh Bà Rịa Vũng Tàu",
     symbol
 )
 
-
-// -- Quang Ngai
-
-export var QuangNgaiCity = createPoint(
-    108.804228,
-    15.118795,
-    "Thành Phố Quảng Ngãi",
-    "tỉnh Quảng Ngãi",
+export var XuyenMocProvince = createPoint(
+    107.1496132,
+    10.6319796,
+    "Huyện Xuyên Mộc",
+    "tỉnh Bà Rịa Vũng Tàu",
     symbol
 )
 
-// -- Quang Nam
-
-export var TamKiCity = createPoint(
-    108.474197,
-    15.577446,
-    "Thành Phố Tam Kì",
-    "tỉnh Quảng Nam",
+export var LongDienProvince = createPoint(
+    107.1907173,
+    10.4836532,
+    "Huyện Long Điền",
+    "tỉnh Bà Rịa Vũng Tàu",
     symbol
 )
 
-export var HoiAnCity = createPoint(
-    108.316667,
-    15.899444,
-    "Thành Phố Hội An",
-    "tỉnh Quảng Nam",
+export var DatDoProvince = createPoint(
+    107.2255185,
+    10.4780819,
+    "Huyện Đất Đỏ",
+    "tỉnh Bà Rịa Vũng Tàu",
     symbol
 )
 
-// -- Đà Nẵng
-
-export var DaNangCity = createPoint(
-    108.202164,
-    16.054407,
-    "Thành Phố Đà Nẵng",
-    "tỉnh Đà Nẵng",
+export var PhuMy = createPoint(
+    107.0619733,
+    10.5833233,
+    "Thị xã Phú Mỹ",
+    "tỉnh Bà Rịa Vũng Tàu",
     symbol
 )
 
-// -- Hà Tĩnh
-
-export var HaTinhCity = createPoint(
-    105.904192,
-    18.341889,
-    "Thành Phố Hà Tĩnh",
-    "tỉnh Hà Tĩnh",
+export var ConDaoProvince = createPoint(
+    106.5986706,
+    8.6944314,
+    "Huyện Côn Đảo",
+    "tỉnh Bà Rịa Vũng Tàu",
     symbol
 )
-
-// -- Nghệ An
-
-export var VinhCity = createPoint(
-    105.6811158,
-    18.6796545,
-    "Thành Phố Vinh",
-    "tỉnh Nghệ An",
+export var DakGlongProvince = createPoint(
+    107.7509651,
+    12.0285446,
+    "Huyện Đăk Glong",
+    "tỉnh Đắk Nông",
     symbol
 )
-
-// -- Thanh Hóa
-
-export var ThanhHoaCity = createPoint(
-    105.7851784,
-    19.8067008,
-    "Thành Phố Thanh Hóa",
-    "tỉnh Thanh Hóa",
+export var DakMilProvince = createPoint(
+    107.5408307,
+    12.5199614,
+    "Huyện Đăk Mil",
+    "tỉnh Đắk Nông",
+    symbol
+)
+export var CuJutProvince = createPoint(
+    107.664215,
+    12.6798298,
+    "Huyện Cư Jút",
+    "tỉnh Đắk Nông",
+    symbol
+)
+export var KrongNoProvince = createPoint(
+    107.7334622,
+    12.3670859,
+    "Huyện Krong Nô",
+    "tỉnh Đắk Nông",
+    symbol
+)
+export var DakSongProvince = createPoint(
+    107.4443891,
+    12.2334724,
+    "Huyện Đắk Song",
+    "tỉnh Đắk Nông",
+    symbol
+)
+export var DakRlapProvince = createPoint(
+    107.4299247,
+    11.89868,
+    "Huyện Đắk R'Lấp",
+    "tỉnh Đắk Nông",
+    symbol
+)
+export var TuyDucProvince = createPoint(
+    107.2353445,
+    12.1333388,
+    "Huyện Tuy Đức",
+    "tỉnh Đắk Nông",
+    symbol
+)
+export var GiaNghiaCity = createPoint(
+    107.5991501,
+    12.0132441,
+    "Thành phố Gia Nghĩa",
+    "tỉnh Đắk Nông",
+    symbol
+)
+// Ninh Thuan
+export var PhanRangThapChamCity = createPoint(
+    108.9933861,
+    11.582401,
+    "Thành phố Phan Rang - Tháp Chàm",
+    "tỉnh Ninh Thuận",
+    symbol
+)
+export var BacAiProvince = createPoint(
+    108.7351299,
+    11.8897884,
+    "Huyện Bác Ái",
+    "tỉnh Ninh Thuận",
+    symbol
+)
+export var NinhSonProvince = createPoint(
+    108.7397021,
+    11.705464,
+    "Huyện Ninh Sơn",
+    "tỉnh Ninh Thuận",
+    symbol
+)
+export var NinHHaiProvince = createPoint(
+    109.0568819,
+    11.6732356,
+    "Huyện Ninh Hải",
+    "tỉnh Ninh Thuận",
+    symbol
+)
+export var NinhPhuocProvince = createPoint(
+    108.6792621,
+    11.4809592,
+    "Huyện Ninh Phước",
+    "tỉnh Ninh Thuận",
+    symbol
+)
+export var ThuanBacProvince = createPoint(
+    108.9989061,
+    11.7442687,
+    "Huyện Thuận Bắc",
+    "tỉnh Ninh Thuận",
+    symbol
+)
+//Bình Thuận
+export var PhanThietCity = createPoint(
+    108.0914166,
+    10.8960548,
+    "Thành Phố Phan Thiết",
+    "tỉnh Bình Thuận",
+    symbol
+)
+export var LaGi = createPoint(
+    107.6943015,
+    10.7130838,
+    "Thị xã La Gi",
+    "tỉnh Bình Thuận",
+    symbol
+)
+export var TuyPhongPrivince = createPoint(
+    108.5233935,
+    11.3408288,
+    "Huyện Tuy Phong",
+    "tỉnh Bình Thuận",
+    symbol
+)
+export var BacBinhProvince = createPoint(
+    108.1963699,
+    11.2634536,
+    "Huyện Bắc Bình",
+    "tỉnh Bình Thuận",
+    symbol
+)
+export var HamThuanBac = createPoint(
+    107.889153,
+    11.1546545,
+    "Huyện Hàm Thuận Bắc",
+    "tỉnh Bình Thuận",
+    symbol
+)
+export var HamThuanNam = createPoint(
+    107.747009,
+    10.9378038,
+    "Huyện Hàm Thuận Nam",
+    "tỉnh Bình Thuận",
+    symbol
+)
+export var TanhLinhProvince = createPoint(
+    107.5242879,
+    11.1382865,
+    "Huyện Tánh Linh",
+    "tỉnh Bình Thuận",
+    symbol
+)
+export var DucLinhProvince = createPoint(
+    107.3637091,
+    11.1944349,
+    "Huyện Tuy Phong",
+    "tỉnh Bình Thuận",
+    symbol
+)
+export var HamTanProvince = createPoint(
+    107.4839705,
+    10.7450456,
+    "Huyện Hàm Tân",
+    "tỉnh Bình Thuận",
+    symbol
+)
+export var PhuQuyProvince = createPoint(
+    108.9397003,
+    10.5333326,
+    "Huyện Phú Quý",
+    "tỉnh Bình Thuận",
+    symbol
+)
+//Tây Ninh
+export var TanBienProvince = createPoint(
+    105.8022905,
+    11.5855623,
+    "Huyện Tân Biên",
+    "tỉnh Tây Ninh",
+    symbol
+)
+export var TanChauProvince = createPoint(
+    106.1257891,
+    11.5804874,
+    "Huyện Tân Châu",
+    "tỉnh Tây Ninh",
+    symbol
+)
+export var DuongMinhChauProvince = createPoint(
+    106.1195261,
+    11.3659102,
+    "Huyện Dương Minh Châu",
+    "tỉnh Tây Ninh",
+    symbol
+)
+export var ChauThanhProvince = createPoint(
+    105.9223441,
+    11.3173656,
+    "Huyện Châu Thành",
+    "tỉnh Tây Ninh",
+    symbol
+)
+export var GoDauProvince = createPoint(
+    106.25674,
+    11.0878117,
+    "Huyện Gò Dầu",
+    "tỉnh Tây Ninh",
+    symbol
+)
+export var BenCauProvince = createPoint(
+    106.0586631,
+    11.1301293,
+    "Huyện Bến Cầu",
+    "tỉnh Tây Ninh",
+    symbol
+)
+export var TayNinhCity = createPoint(
+    106.088454,
+    11.3658602,
+    "Thành phố Tây Ninh",
+    "tỉnh Tây Ninh",
+    symbol
+)
+export var HoaThanh = createPoint(
+    106.1006304,
+    11.2518771,
+    "Thị xã Hòa Thành",
+    "tỉnh Tây Ninh",
+    symbol
+)
+export var TrangBang = createPoint(
+    106.3408342,
+    11.0323627,
+    "thị xã Trảng Bảng",
+    "tỉnh Tây Ninh",
     symbol
 )
