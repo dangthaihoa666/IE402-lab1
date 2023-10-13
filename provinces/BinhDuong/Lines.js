@@ -3344,5 +3344,5 @@ export var BDLines = createPolygon(
   "Bình Dương",
   2649.4,
   2678220,
-  [0, 0, 0]
+  [243, 214, 154]
 );

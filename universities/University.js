@@ -1043,12 +1043,13 @@ export var C3_NCT_DN = createPoint(
     symbolC3
 )
 export var C3_PVĐ_DN = createPoint(
-    107.9977795,
-    12.5257096,
+    107.5157905,
+    12.0033591,
     "Trường THPT Phạm Văn Đồng",
     "tỉnh Đắk Nông",
     symbolC3
 )
+
 export var C3_NTT_DN = createPoint(
     107.5511534,
     11.90556,

@@ -12394,5 +12394,5 @@ var path = [
     [107.57107989640771, 10.567460674529288]
 ];
 
-export var VTLines = createPolygon(path, "Bà Rịa - Vũng Tàu", 1989.46, 1319700, [225, 236, 159])
+export var VTLines = createPolygon(path, "Bà Rịa - Vũng Tàu", 1989.46, 1319700, [205, 255, 255])
 

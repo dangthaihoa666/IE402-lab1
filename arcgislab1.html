@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>ArcGIS Lab 1</title>
+    <title>ArcGIS Lab 1 IE402.N21</title>
     <style>
         html,
         body,
@@ -15,101 +15,92 @@
         }
     </style>
 
-  <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
-  <script src="https://js.arcgis.com/4.26/"></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.26/"></script>
 
-  <script type="module">
-        import { point_template_tree, point_template_light, point_template_chair, point_template_area, point_template_university } from './template/pointTemplate.js';
-        import { tempPoints } from './template/tempPoints.js'
-        import { tempLines } from './template/tempLines.js'
+    <script type="module">
         import { createData } from './template/createData.js'
-
-        import {QL1KLDLine} from '/provinces/BinhDuong/QL1K.js'
-        import {QL1ALDLine} from '/provinces/BinhDuong/QL1A.js'
-
-        import {QL14DNLine} from '/provinces/DakNong/QL14.js'
-        import {QL14aDNLine} from '/provinces/DakNong/QL14a.js'
-        import {QL14bDNLine} from '/provinces/DakNong/QL14b.js'
-        import {QL28DNLine} from '/provinces/DakNong/QL28.js'
-        import {QL28aDNLine} from '/provinces/DakNong/QL28a.js'
-
+        //Bình Dương
+        import { QL1KLDLine } from '/provinces/BinhDuong/QL1K.js'
+        import { QL1ALDLine } from '/provinces/BinhDuong/QL1A.js'
+        import { BDLines } from './provinces/BinhDuong/Lines.js'
+        //Đắk Nông
+        import { QL14DNLine } from '/provinces/DakNong/QL14.js'
+        import { QL14aDNLine } from '/provinces/DakNong/QL14a.js'
+        import { QL14bDNLine } from '/provinces/DakNong/QL14b.js'
+        import { QL28DNLine } from '/provinces/DakNong/QL28.js'
+        import { QL28aDNLine } from '/provinces/DakNong/QL28a.js'
+        import { DNLines } from '/provinces/DakNong/DNLines.js'
+        //Lâm Đồng
         import { QL28aLDLine } from '/provinces/LamDong/QL28a.js'
         import { QL28LDLine } from '/provinces/LamDong/QL28.js'
         import { QL27LDLine } from '/provinces/LamDong/QL27.js'
         import { QL27aLDLine } from '/provinces/LamDong/QL27a.js'
         import { QL20LDLine } from '/provinces/LamDong/QL20.js'
-
+        import { LDLines } from '/provinces/LamDong/LDLines.js'
+        //Bình Thuận
         import { BinhThuanLine } from './provinces/BinhThuan/Lines.js'
         import { OneABTLine } from './provinces/BinhThuan/1A.js'
         import { QL28BTLine } from './provinces/BinhThuan/QL28.js'
         import { QL28BBTLine } from './provinces/BinhThuan/QL28B.js'
         import { QL55BBTLine } from './provinces/BinhThuan/QL55B.js'
         import { QL55BTLine } from './provinces/BinhThuan/QL55.js'
+        //Ninh Thuận
         import { QL27NTLine } from './provinces/NinhThuan/QL27.js'
         import { QL27BNTLine } from './provinces/NinhThuan/QL27B.js'
         import { QL1ANTLine } from './provinces/NinhThuan/QL1A.js'
-
         import { NinhThuanLine } from './provinces/NinhThuan/Lines.js'
+        //Vũng Tàu
+        import { VTLines } from './provinces/VungTau/VTLines.js'
+        import { QL51LDLine } from './provinces/VungTau/QL51.js'
+        import { QL55LDLine } from './provinces/VungTau/QL55.js'
+        import { QL56LDLine } from './provinces/VungTau/QL56.js'
+        //Đồng Nai
+        import { DongNaiLines } from './provinces/DongNai/DongNaiLines.js'
+        import { QL20DNLine } from './provinces/DongNai/QL20.js'
+        import { QL56DNLine } from './provinces/DongNai/QL56.js'
+        import { AH1DongNaiLine } from './provinces/DongNai/AH1.js'
+        //Tây Ninh
+        import { TNLines } from './provinces/TayNinh/TNLines.js'
+        import { QL22BTNLine } from './provinces/TayNinh/QL22B.js'
+        import { AH1TNLine } from './provinces/TayNinh/AH1.js'
+        //Bình Phước
+        import { AH17BPLine } from './provinces/BinhPhuoc/AH17.js'
+        import { QL14BPLine } from './provinces/BinhPhuoc/QL14.js'
+        import { BPLines } from './provinces/BinhPhuoc/BPLines.js'
+        //Lấy hết tất cả các export trong 2 file universities.js và cities.js
         import * as universities from './universities/University.js'
         import * as cities from './cities/City.js'
-
-
-        import { DNLines } from '/provinces/DakNong/DNLines.js'
-        import { LDLines } from '/provinces/LamDong/LDLines.js'
-
-
-
-        import { VTLines } from './provinces/VungTau/VTLines.js'
-        import { QL51LDLine} from './provinces/VungTau/QL51.js'
-        import { QL55LDLine} from './provinces/VungTau/QL55.js'
-        import { QL56LDLine} from './provinces/VungTau/QL56.js'
-
-        import { DongNaiLines } from './provinces/DongNai/DongNaiLines.js'
-        import {TNLines} from './provinces/tayninh/TNLines.js'
-        import {QL22BTNLine} from './provinces/TayNinh/QL22B.js'
-        import {AH1TNLine} from './provinces/TayNinh/AH1.js'
-
-        import {QL20DNLine} from './provinces/DongNai/QL20.js'
-        import {QL56DNLine} from './provinces/DongNai/QL56.js'
-        import {AH1DongNaiLine} from './provinces/DongNai/AH1.js'
-
-        import {AH17BPLine} from './provinces/BinhPhuoc/AH17.js'
-        import {QL14BPLine} from './provinces/BinhPhuoc/QL14.js'
-
-        import {BPLines} from './provinces/BinhPhuoc/BPLines.js'
-
-        import { BDLines } from './provinces/BinhDuong/Lines.js'
-        const arrUniversity = Object.values(universities)
-        const arrCity = Object.values(cities)
+        //Tạo các mảng chứa các đối tượng export từ universities và cities
+        const Universities = Object.values(universities)
+        const Cities = Object.values(cities)
         var points = [].concat(
             [
-                ...arrUniversity, // dai hoc
-                ...arrCity, // tp
-            ]) // add new points here
+                ...Universities, //ghép mọi đối tượng trong Universities vào mảng points
+                ...Cities, // Tương tự với Cities
+            ]) 
+        //Thêm các Lines được tạo vào đối tượng mảng lines
         var lines = [].concat(
             [
                 BinhThuanLine, NinhThuanLine,
-                QL27NTLine, QL27BNTLine,   QL1ANTLine, 
-                 DNLines, LDLines, OneABTLine,
+                QL27NTLine, QL27BNTLine, QL1ANTLine,
+                DNLines, LDLines, OneABTLine,
                 QL28BTLine,
                 QL28BBTLine,
                 QL55BBTLine,
                 QL55BTLine,
-                QL14DNLine, QL14aDNLine, QL14bDNLine, QL28DNLine, QL28aDNLine,
+                QL14DNLine,
+                QL14aDNLine,
+                QL14bDNLine, QL28DNLine, QL28aDNLine,
                 QL28aLDLine, QL28LDLine, QL27LDLine, QL27aLDLine, QL20LDLine,
-                VTLines, QL51LDLine,  QL55LDLine, QL56LDLine,
+                VTLines, QL51LDLine, QL55LDLine, QL56LDLine,
                 QL1KLDLine, QL1ALDLine,
                 DongNaiLines,
                 TNLines, BPLines,
                 QL22BTNLine, AH1TNLine, QL20DNLine, QL56DNLine, AH1DongNaiLine, AH17BPLine, QL14BPLine,
-                
-                 BDLines,
-
-            ]) // add new lines here
-
-
-        var jsondata = createData(points, lines);
-
+                BDLines,
+            ]) 
+        var allGraphics = createData(points, lines);
         require([
             "esri/Map",
             "esri/views/MapView",
@@ -133,6 +124,7 @@
                     color: "blue"
                 }
             });
+            //Tạo graphic dựa trên các đối tượng đã được tạo ra vì các export ở các file khác sẽ tạo ra những đối tượng cài đặt sẵn symbol, geometry,...
             var createGraphic = function (data) {
                 return new Graphic({
                     geometry: data,
@@ -141,25 +133,26 @@
                     popupTemplate: data.popupTemplate
                 });
             };
+            //Duyệt qua từng phần tử đối tượng bằng hàm forEach để tạo graphic dựa trên các thuộc tính điểm và add vào graphicLayer.
             var graphicsLayer = new GraphicsLayer();
-            jsondata.points.forEach(function (data) {
+            allGraphics.points.forEach(function (data) {
                 graphicsLayer.add(createGraphic(data));
             });
-            jsondata.lines.forEach(function (data) {
+            allGraphics.lines.forEach(function (data) {
                 graphicsLayer.add(createGraphic(data));
             });
-            jsondata.polygons.forEach(function (data) {
+            allGraphics.polygons.forEach(function (data) {
                 graphicsLayer.add(createGraphic(data));
             });
             map.add(graphicsLayer);
 
-    });
-  
-  </script>
+        });
+
+    </script>
 </head>
 
 <body>
-<div id="viewDiv"></div>
+    <div id="viewDiv"></div>
 </body>
 
 </html>
